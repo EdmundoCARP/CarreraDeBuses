@@ -29,4 +29,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="My Project\NewFolder5\" />
+  </ItemGroup>
+
 </Project>
