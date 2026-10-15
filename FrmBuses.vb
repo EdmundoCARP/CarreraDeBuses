@@ -21,7 +21,7 @@
         End SyncLock
 
         btnIniciar.Enabled = False
-        IniciarHilos()
+        IniciarCarrera()
         tmrEstados.Start()
     End Sub
 

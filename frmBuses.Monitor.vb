@@ -7,7 +7,7 @@
         e As EventArgs
     ) Handles tmrEstados.Tick
 
-        If hilos Is Nothing Then Return
+        If hilosBuses Is Nothing Then Return
 
         Dim estados As Label() = {
             lblEstado1,
@@ -18,13 +18,13 @@
         Dim todosDetenidos As Boolean = True
 
         For i As Integer = 0 To 2
-            If hilos(i) Is Nothing Then
+            If hilosBuses(i) Is Nothing Then
                 estados(i).Text = "Sin iniciar"
                 todosDetenidos = False
             Else
-                estados(i).Text = hilos(i).ThreadState.ToString()
+                estados(i).Text = hilosBuses(i).ThreadState.ToString()
 
-                If Not hilos(i).IsAlive Then
+                If Not hilosBuses(i).IsAlive Then
                     ' El hilo ya terminó.
                 Else
                     todosDetenidos = False
