@@ -1,5 +1,15 @@
 # CarreraDeBuses
 
+
+
+Integrantes
+
+-Edmundo Enrique Diaz Alburquerque
+
+-Lenner Elias Zeledon Lazo
+
+
+
 yo me encargué de la parte de hilos: creé los tres hilos de los buses (Bus 1, Bus 2 y Bus 3) en segundo plano, implementé el método Viajar() que hace avanzar cada bus de 5 en 5 km con pausas aleatorias, actualicé las barras de forma segura con Invoke y agregué el cierre seguro para que los hilos no toquen la interfaz al cerrar. Mi compañero se encargó de la interfaz del formulario, el botón Iniciar, el cierre de la ventana, el temporizador que muestra los estados de los hilos, el candado y la variable que registra al ganador con SyncLocv
 
 Se abre el proyecto con Visual Studio 2026 (carga de trabajo de escritorio de .NET), clonando el repositorio o abriendo la carpeta `CarreraDeBuses`. Abre la solución, compila con Reconstruir solución y ejecuta con F5. El formulario de inicio es FrmBuses y el proyecto usa .NET 10 con Windows Forms en Visual Basic.
